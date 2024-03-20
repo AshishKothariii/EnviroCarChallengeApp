@@ -18,7 +18,9 @@
 
 - Navigate to EnviroCarChallengeApp/app/src/main/res/values/strings.xml.
 
-- Locate the maplibre_api_key placeholder and replace it with your actual MapLibre API key.
+* Replace api_key by your MapLibre Api key which you get from MapTiler
+
+* you can also replace track_id for testing your own track.
 
 - Save the file after making the changes.
 

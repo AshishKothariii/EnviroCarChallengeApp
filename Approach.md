@@ -1,44 +1,41 @@
+# This document outlines the technical approach used in the EnviroCar Track Visualizer with MapLibre challenge app.
 
-## Overview:
-* This Android app visualizes user's own enviroCar track within an OpenStreetMap (OSM) using MapLibre Native library. It allows users to record their track using the enviroCar Android app, upload it to the enviroCar server, and visualize it on the map within this app.
+## Objective:
 
-## Features:
-* Fetches track data from the enviroCar server API in JSON format.
-* Displays an OSM map using MapLibre Native library.
-* Visualizes the recorded track as a Polyline on the map.
-* Highlights start and endpoint of the track with markers.
-* Shows a popup with timestamp when a track point is clicked.
+* Develop an Android application that visualizes a recorded enviroCar track on a MapLibre map.
+## Approach:
 
-## Approach
-* After reading the problem statement for the challenge app i started building the challenge app as follows.
+### Data Fetching (Simulated):
 
-* Firstly i added the MapLibre Native Android Dependency.
+* Utilize a placeholder API call to simulate fetching a pre-defined JSON string representing a recorded enviroCar track.
+* This JSON data would typically contain GPS coordinates and timestamps in a real-world scenario.
+* Parse the JSON data to extract relevant information like latitude, longitude, and timestamps (if applicable).
+### Map Integration:
 
-* Created a Single View Layout which consists of MapView (It is used to show the MapView) ,Button (When CLicked will show the track).
+* Leverage the MapLibre Native library for Android to display a map.
+* Set the map style to OpenStreetMap (OSM) to provide a familiar base map.
+### Track Visualization:
 
-* Set the Map Style to OSM.
+* Utilize the MapLibre API to create a Polyline object from the extracted list of GPS coordinates.
+* Add the Polyline object to the map, effectively visualizing the track path.
+## Markers:
 
-* Then Recorded and uploaded the track to EnviroCarApp used the envirocar api to fetch the track.
+* Create markers for the origin and destination points of the track using the MapLibre API.
+* Customize marker icons (optional) to visually distinguish them.
+## Popups (Basic):
+* Implement a basic on-click listener for the track point markers.
+* When a marker is clicked, display a simple message (placeholder functionality).
+## Technical Considerations:
 
-* After fetching the Json which contains track details proccesed it to get List of Latitude and Longitude , start and end time.
+* This approach prioritizes simplicity and demonstration of core functionalities.
+* In a real-world scenario, the app would need to:
+* Implement actual enviroCar API calls for secure and authenticated data retrieval.
+* Handle potential errors or network issues during the data fetching process.
+## Further Enhancements:
 
-* Draw the polyline using the points in the Latitude Longitude List.
-
-* Add Markers to start and end points.
-
-* Animated the camera to the starting position with some amount of zoom.
-
-* Added onClickListeners to the Markers which will onclick gives the time, date and type of the marker.
-
-## Future Work and Suggestions
-
-* Would be Working to improve the Coding Practices and adopt with the codebase of the organisation.
-
-* Need to improve the UI since it was a challenge app and the criteria was to meet the minimum requirement i haven't focused on UI
-
-* Free to suggestions if someone wants me to add something add suggestions to Suggestion.md
-
-## Conclusion
-
-* This project was made to show that i am confident and willing to contribute to the EnviroCarApp MapBox to MapLibre Project for Gsoc2024.
-
+Integrate the actual enviroCar API for track data retrieval.
+* Develop a more comprehensive popup functionality that displays the timestamp of the clicked track point.
+* Implement user location tracking and display it on the map (with appropriate permissions).
+* Add map controls (zoom, pan) to enhance user interaction.
+* Explore customization options for map styles and marker icons.
+* By following this approach, the EnviroCar Track Visualizer demonstrates the feasibility of migrating map functionalities from Mapbox to MapLibre while showcasing core visualization capabilities.
