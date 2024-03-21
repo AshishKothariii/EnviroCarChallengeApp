@@ -14,6 +14,12 @@
 * Track Visualization: Visualizes the retrieved track data as a Polyline on the map.
 * Markers: Highlights the track's origin and destination points with markers.
 * Popups (Basic): Clicking on a track point marker displays a generic message (placeholder functionality).
+## Demo: 
+ [Video Demo](https://www.youtube.com/watch?v=JZKvMAWQqh4).
+ [OSM VIew]
+ [Track View]
+ [Origin]
+ [Destination]
 ## Technical Stack:
 * Android Studio
 * MapLibre Native library for Android
