@@ -14,12 +14,12 @@
 * Track Visualization: Visualizes the retrieved track data as a Polyline on the map.
 * Markers: Highlights the track's origin and destination points with markers.
 * Popups (Basic): Clicking on a track point marker displays a generic message (placeholder functionality).
-## Demo: 
- [Video Demo](https://www.youtube.com/watch?v=JZKvMAWQqh4).
- [OSM VIew]
- [Track View]
- [Origin]
- [Destination]
+## Demo:
+[Video Demo](https://www.youtube.com/watch?v=JZKvMAWQqh4).
+![OSM VIew](https://github.com/AshishKothariii/EnviroCarChallengeApp/blob/main/Publicdocs/OSM_view.png)
+![Track View](https://github.com/AshishKothariii/EnviroCarChallengeApp/blob/main/Publicdocs/Track_View.png)
+![Origin](https://github.com/AshishKothariii/EnviroCarChallengeApp/blob/main/Publicdocs/Origin%20Marker.png)
+![Destination](https://github.com/AshishKothariii/EnviroCarChallengeApp/blob/main/Publicdocs/Destination%20Marker.png)
 ## Technical Stack:
 * Android Studio
 * MapLibre Native library for Android
